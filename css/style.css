@@ -1,0 +1,807 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    background-color: #F5F5F5;
+    width: 100%;
+    
+}
+
+header{
+    width: 100%;
+}
+
+.nav-top{
+    display: flex;
+    height: 73px;
+    border-bottom: 1px solid #eaeaea;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-family: 'Rochester', cursive;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    color: #1B2437;
+    text-decoration: none;
+}
+
+/* Social networks */
+
+.social-networks{
+    display: flex;
+    margin-left: 384px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-networks a:nth-child(2), .social-networks a:nth-child(3) {
+    margin-left: 40px;
+  }
+
+.sn-icons{
+    text-decoration: none;
+}
+
+/* Navigation items */
+
+.nav-items{
+    display: flex;
+    margin-left: 366px;
+    align-items: center;
+    justify-content: center;
+}
+
+.items-icons{
+    text-decoration: none;
+}
+
+.nav-items a:nth-child(2) {
+    margin-left: 35px;
+  }
+
+.nav-items a:nth-child(3) {
+    margin-left: 30px;
+}
+
+/* Main navigation */
+
+.nav-main{
+    display: flex;
+    height: 79px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-menu li:nth-child(even) {
+    margin-left: 81px;
+}
+
+.main-menu li:nth-child(3) {
+    margin-left: 80px;
+}
+
+
+.main-menu-list{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.main-menu-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    color: #000000;
+    position: relative;
+    text-decoration: none;
+}
+
+.main-menu-items:hover{
+    color: #EDA3B5;
+    transition: ease 0.1s;
+}
+
+.underline{
+    width: 34px;
+    height: 3px;
+    margin-top: 6px;
+}
+
+.main-menu-items:hover .underline {
+    background-color: #eda3b5;
+    transition: ease 0.2s;
+  }
+
+/* Intro */
+
+.intro{
+    display: flex;
+    height: 569px;
+    background-image: url('../img/hero.png');
+    margin-bottom: 70px;
+}
+
+.intro-info{
+    margin: 103px 0 0 164px;
+}
+
+.intro-heading{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 67px;
+    color: #FFFFFF;
+    margin-bottom: 13px;
+    
+}
+
+.intro-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+}
+
+.intro-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 255px;
+    height: 77px;
+    background: #1B2437;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Main content */
+.main-content{  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.first-container{
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 1110px;
+    height: 802px;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item1 item4 item4"
+    "item5 item5 item5"
+    ;
+}
+
+/* First item */
+
+.first-item1{
+   grid-area: item1;
+   padding: 268px 0 0 32px;
+   width: 445px;
+   height: 458px;
+   border-radius: 16px;
+   background-image: url('../img/women_collection_category.png');
+}
+
+.item1-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.item1-heading{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.item1-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.item1-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 93px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+/* Second item */
+
+.first-item2{
+    grid-area: item2;
+    width: 303px;
+    height: 225px;
+    padding: 53px 0 0 22px;
+    background: #EFEFF4;
+    border-radius: 16px;
+}
+
+.item2-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #1B2437;
+}
+
+.item2-heading{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    color: #1B2437;
+}
+
+/* Third item */
+
+.first-item3{
+    grid-area: item3;
+    width: 302px;
+    height: 225px;
+    background: url('../img/dresses_category.png');
+    border-radius: 16px;
+    padding: 53px 0 0 39px;
+ }
+
+ .item3-heading{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FFFFFF;
+ }
+
+ .item3-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+ }
+
+ /* Fourth item */
+
+ .first-item4{
+    grid-area: item4;
+    width: 635px;
+    height: 204px;
+    background: url('../img/denim_jackets_category.png');
+    border-radius: 16px;
+    padding: 64px 0 0 22px;
+ }
+
+.item4-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #1B2437;
+ }
+
+ .item4-heading{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    color: #1B2437;
+ }
+
+ /* Fifth item */
+
+ .first-item5{
+    grid-area: item5;
+    background: #FFFFFF;
+    border-radius: 16px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .product-container{
+    display: flex;
+    text-align: center;
+ }
+
+.container-item1{
+    width: 255px;
+    height: 236px;
+    padding: 40px 0 0 20px;
+    margin-right: 30px;
+}
+
+.container-item1-heading{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 39px;
+}
+
+.container-item2{
+    width: 255px;
+    height: 236px;
+    padding: 34px 0 0 40px;
+    margin-right: 30px;
+}
+
+.container-item2-heading{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 34px;
+}
+
+.container-item3{
+    width: 255px;
+    height: 236px;
+    padding: 57px 0 0 30px;
+    margin-right: 30px;
+}
+
+.container-item3-heading{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 57px;
+}
+
+.container-item4{
+    width: 255px;
+    height: 236px;
+    padding: 37px 0 0 0;
+}
+
+.container-item4-heading{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 37px;
+}
+
+.first-item5-slider{
+    display: block;
+    margin-top: 24px;
+}
+
+/* Second container */
+
+
+.second-container-heading{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 67px;
+    color: #1B2437;
+    margin-top: 70px;
+
+}
+
+.second-container-layout{
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 1110px;
+    margin-top: 35px;
+
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6"
+    ;
+}
+
+/* Product 1 */
+
+.layout-item1{
+    grid-area: item1;
+    height: 487px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+/* First layout (1,4 products) */
+
+.layout-first-png{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.layout-first-like{
+    position: absolute;
+    margin: 16px 0 0 290px;
+    cursor: pointer;
+}
+
+.layout-first-info{
+    padding-left: 24px;
+}
+
+.layout-first-heading{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.layout-first-text{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 27px;
+}
+
+.layout-first-buy-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout-first-price{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.layout-first-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 153px;
+    height: 58px;
+    background: #EDA3B5;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+/* Second layout (1,4 products) */
+
+.layout-second-png{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.layout-second-like{
+    position: absolute;
+    margin: 16px 0 0 290px;
+    cursor: pointer;
+}
+
+.layout-second-info{
+    padding-left: 24px;
+}
+
+.layout-second-heading{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.layout-second-text{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 27px;
+}
+
+.layout-second-buy-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout-second-price{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.layout-second-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 153px;
+    height: 58px;
+    background: #1B2437;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+
+.layout-item2{
+    grid-area: item2;
+    background-color: #ffffff;
+    border-radius: 16px;
+}
+
+.layout-item3{
+    grid-area: item3;
+    background-color: #ffffff;
+    border-radius: 16px;
+}
+
+.layout-item4{
+    grid-area: item4;
+    background-color: #ffffff;
+    border-radius: 16px;
+}
+
+.layout-item5{
+    grid-area: item5;
+    background-color: #ffffff;
+    border-radius: 16px;
+}
+
+.layout-item6{
+    grid-area: item6;
+    background-color: #ffffff;
+    border-radius: 16px;
+}
+
+/* Third container */
+
+.contacts-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 1110px;
+}
+
+.map{
+    display: flex;
+    margin: 12px 12px 27px 12px;
+}
+
+
+.location-point{
+    display: flex;
+    position: absolute;
+    margin: 255px 0 0 431px;
+}
+
+.contacts-heading{
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 67px;
+    color: #1B2437;
+    margin-bottom: 35px;
+}
+
+.contacts-wrapper{
+    height: 658px;
+    background-color: #ffffff;
+    border-radius: 16px;
+}
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 288px;
+    grid-row-gap: 20px;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6"
+    ;
+    padding: 0 60px 0 122px;
+    margin-top: 27px;
+
+}
+
+.mail-icon{
+    grid-area: item1;
+}
+
+.location-icon{
+    grid-area: item2;
+    display: flex;
+    justify-content: center;
+}
+
+.phone-icon{
+    grid-area: item3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail-text{
+    grid-area: item4;
+    width: 48px;
+    height: 30px;
+}
+
+.location-text{
+    grid-area: item5;
+    display: flex;
+    justify-content: center;
+}
+
+.phone-text{
+    grid-area: item6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 30px;
+}
+
+.phone-text-link{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.text{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    
+}
+
+/* Footer section */
+
+footer{
+    width: 1440px;
+}
+
+.footer-main{
+    display: flex;
+    height: 333px;
+    background: #FFFFFF;
+    margin-top: 70px;
+    padding: 32px 0 0 165px;
+}
+
+.footer-text{
+    width: 255px;
+}
+
+.text-paregraph{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5C5C5C;
+    margin-top: 24px;
+}
+
+.footer-hot-links{
+    margin-left: 126px;
+}
+
+.footer-heading{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 22px;
+
+}
+
+.footer-items{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #8E8E93;
+    text-decoration: none;
+}
+
+.footer-list{
+    margin-bottom: 22px;
+}
+
+.footer-more-info{
+    margin-left: 207px;
+}
+
+.footer-customer{
+    margin-left: 134px;
+}
+
+.copyright-container{
+    display: flex;
+    width: 1440px;
+    height: 74px;
+    background: #E5E5EA;
+    padding: 0 165px;
+}
+
+.copyright-contant{
+    display: flex;
+    align-items: center;
+}
+
+.copyright-text{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: #8E8E93;
+}
+
+.footer-social-networks{
+    display: flex;
+    align-items: center;
+    margin-left: 812px;
+}
+
+.footer-social-networks a:nth-child(2), .footer-social-networks a:nth-child(3) {
+    margin-left: 40px;
+  }
